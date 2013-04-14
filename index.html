@@ -14,10 +14,32 @@ BODY { behavior:url("js/csshover.htc");}
 </style>
 <![endif]-->
 
-<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.min.js"></script>
 <script type="text/javascript" src="js/jquery.tools-1.2.7.min.js"></script>
+<script>
+	$(function() {
+			var i = $(window).width();
+			if (i > 319){ $('#items > div').css({ width: i }); }
+			$("#slider").scrollable({ circular: true, touch: false, easing: 'easeInOutBack', speed: 900}).navigator({ navi: '#navigation' });
+			window.api = $("#slider").data("scrollable");
+			$(window).resize(function() {
+				var a = 1 + window.api.getIndex();
+				var w = $(window).width();
+				if (w > 319) {
+					var l = a * w
+					$('#items').css({ left: + - +l });
+					$('#items > div').css({ width: w });
+				} else {
+					$('#items > div').css({ width: 300 });
+				}
+			});
+		});
+</script>
+
 <script type="text/javascript" src="js/my_script.js"></script>
+
+
 </head>
 <body>
 <div class="main-container">
@@ -71,6 +93,8 @@ BODY { behavior:url("js/csshover.htc");}
 </div>
 <!-- /Content -->
 
+</div>
+
 <!-- Footer -->
 <div id="footer">
 <div class="footer">
@@ -86,7 +110,5 @@ BODY { behavior:url("js/csshover.htc");}
 </div>
 </div>
 <!-- /Footer -->
-
-</div>
 </body>
 </html>
