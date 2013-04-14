@@ -1,5 +1,5 @@
 /* HTML tags : start */
-html, body, p, h1, h2, h3, a, img, form, table, tr, td {
+html, body, p, h1, h2, h3, h4, a, img, form, table, tr, td {
         margin: 0;
         padding: 0;
         border: 0}
@@ -17,8 +17,9 @@ h1{}
 
 
 @font-face {font-family: 'NeoSnCyr';  src: url(../fonts/neosans_0.eot);     src: url(../fonts/neosans_0.eot?#iefix) format('embedded-opentype'),          url(../fonts/neosans_0.woff) format('woff'),          url(../fonts/neosans_0.ttf) format('truetype'),          url(../fonts/neosans_0.svg#neosans_0) format('svg');     font-weight: normal;     font-style: normal; }
+
 a{color:#d7152b}
-a:hover{text-decoration:none}
+a:hover{color:#990415}
 
 .main-container{padding-bottom:200px;overflow:hidden}
 
@@ -115,11 +116,22 @@ a:hover{text-decoration:none}
 .reg-box .send-b{padding:10px 0 0 0;clear:both}
 .reg-box .send-b input{width:400px}
 
-.brd{-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;-moz-box-shadow: 10px 10px 20px 0 #000; -webkit-box-shadow: 10px 10px 20px 0 #000; box-shadow: 10px 10px 20px 0 #000;width:200px;padding:20px;border:1px solid red;behavior: url(js/PIE.htc)}
+.txt-box p{line-height:17px;padding-bottom:18px}
+.txt-box h2{font-size:27px;font-family:'PTSansRegular';font-weight:normal;padding:10px 0 20px 0}
+.txt-box h3{font-size:22px;font-family:'PTSansRegular';font-weight:normal;padding:10px 0 20px 0}
+.txt-box h4{font-size:17px;font-family:'PTSansRegular';font-weight:normal;padding:10px 0 20px 0}
+.txt-box ul{line-height:17px;margin-top:0;padding-bottom:15px}
+.txt-box ol{line-height:17px;margin-top:0;padding-bottom:15px}
+.txt-box table{border-bottom:2px solid #5e5f62;border-top:2px solid #5e5f62;margin-bottom:20px;width:100%;border-collapse:collapse}
+.txt-box table td{border-top:1px solid #d9d9d9;padding:10px 0}
+.txt-box table tr:first-child td{border-top:0}
 
-.txt-box ol{margin:5px 24px 10px 24px;padding:0;counter-reset:li;}
-.txt-box ol li{padding:0 0 10px 0 ;font-size:13px;line-height:17px;position:relative;display:block}
-.txt-box ol li:before {content:counter(li)". "; counter-increment:li;color:#ee2f3d;position:absolute; top:0; left:-16px;}
+.pagebar{clear:both;border-top:1px solid #d9d9d9;padding:20px 0 0 0}
+.pagebar ul{margin:0;padding:0;list-style-type:none}
+.pagebar ul li{float:left;margin:0 0 0 10px}
+.pagebar ul li:first-child{margin-left:0}
+.pagebar ul li a{display:block;padding:5px 8px;}
+.pagebar ul li.act a{border:1px solid #cecece;cursor:text;color:#000;text-decoration:none;font-weight:bold}
 
 
 /* Content */
