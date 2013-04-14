@@ -210,6 +210,18 @@ a:hover{color:#990415}
 .sale-select .line .jq-selectbox .select {width:262px;background:url(../images/select02.png) no-repeat}
 .sale-select .line .jq-selectbox .dropdown {width:315px}
 
+.shop-box{}
+.shop-box table{border-collapse:collapse;width:100%}
+.shop-box table td{vertical-align:top;padding:20px 0 10px 0;border-top:1px solid #e3e3e3}
+.shop-box table tr:first-child td{padding-top:0;border:0}
+.shop-box table td:first-child{padding-right:30px}
+.shop-box table td p{padding:0 0 10px 0;line-height:17px}
+.shop-box table td p span{vertical-align:top;color:#d7152b;margin-left:10px}
+.shop-box table td p a{color:#000;font-size:23px;font-family:'PTSansRegular';text-decoration:none;line-height:normal}
+.shop-box table td div{font-family:'PTSansRegular';font-size:31px;white-space:nowrap}
+.shop-box table td div span{font-size:17px;vertical-align:top}
+.shop-box input[type="submit"]{width:94px;font: 12px/30px Arial, Tahoma, sans-serif !important;height:30px !important;margin-top:5px}
+
 /* Content */
 
 /* Footer */
