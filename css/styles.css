@@ -40,6 +40,7 @@ a:hover{color:#990415}
 .mmenu ul li{float:left;margin-right:21px}
 .mmenu ul li a{font-size:14px;font-weight:bold}
 .mmenu ul li.act a{text-decoration:none;color:#000;cursor:text}
+
 /* Menu */
 
 .slide-box{position:relative;height:289px;background:#000}
@@ -221,6 +222,19 @@ a:hover{color:#990415}
 .shop-box table td div{font-family:'PTSansRegular';font-size:31px;white-space:nowrap}
 .shop-box table td div span{font-size:17px;vertical-align:top}
 .shop-box input[type="submit"]{width:94px;font: 12px/30px Arial, Tahoma, sans-serif !important;height:30px !important;margin-top:5px}
+
+.delivery-box{border-top:2px solid #5e5f62;padding-top:20px}
+.delivery-box h2{font-size:23px;font-weight:normal;padding-bottom:15px;font-family:'PTSansRegular';}
+.delivery-box table{border-collapse:collapse;width:100%}
+.delivery-box table td{vertical-align:top;padding-left:30px}
+.delivery-box table td:first-child{padding-left:0px}
+.delivery-box table td textarea{height:123px;width:423px}
+.delivery-box table td:first-child textarea{height:78px;width:423px}
+.delivery-box .line{padding-bottom:10px;}
+.delivery-box .line input{width:413px;font-style:italic;behavior: url(js/pie.htc);}
+
+.delivery-box .reg{border:1px solid #e4e4e4;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);position:relative;padding:20px;margin:25px 0 0 0}
+.delivery-box .reg input{width:100%}
 
 /* Content */
 
