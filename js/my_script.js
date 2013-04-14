@@ -17,27 +17,7 @@
         });
     });
 
-		$('ul.tabs').delegate('li:not(.current)', 'click', function() {
-		$(this).addClass('current').siblings().removeClass('current')
-			.parents('div.section').find('div.box').hide().eq($(this).index()).fadeIn(150);
-			return false;
-		});
-
-		$(".checkboxclass").click(function(){
-        if($(this).is(":checked")){
-            $(this).next("label").addClass("labelselected");
-        }else{
-            $(this).next("label").removeClass("labelselected");
-        }
-    });
-
-		$(".radioclass").click(function(){
-			 if($(this).is(":checked")){
-            $(".radioselected:not(:checked)").removeClass("radioselected");
-            $(this).next("label").addClass("radioselected");
-			  }
-
-    });
+			
 		
 		//form
 		$('.line select, .line input').styler();
@@ -59,7 +39,6 @@
 				}
 			});
 
-		
 
 };
 

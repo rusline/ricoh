@@ -56,7 +56,7 @@
 .jq-file input {cursor: pointer;}
 .jq-file .name {width:0px;	border: none;	background: none;}
 .jq-file .browse {	padding: 0 20px;	border-radius: 5px;	background:#d7152b url(../images/upload_img.png) center no-repeat;	width:140px;	height:28px;	color:#d7152b;line-height:50}
-.jq-file:hover .browse {}
+.jq-file:hover .browse  {background:#990415}
 .jq-file:active .browse {}
 .jq-file.disabled, .jq-file.disabled .browse {}
 
@@ -118,7 +118,14 @@ textarea.styler {
 }
 input[type="search"].styler {-webkit-appearance: none;}
 
-textarea.styler {overflow: auto;}
+textarea.styler {padding:10px 0 0 10px;
+	border: 1px solid #CCC;
+	background:#fff url(../images/in_bg.png) top repeat-x;
+	border-radius: 5px;
+	color: #5a5a5d;
+	font: 12px Arial, Tahoma, sans-serif;
+	font-style:italic;
+}
 
 input[type="email"].styler:hover,
 input[type="number"].styler:hover,
@@ -166,7 +173,7 @@ button.styler:after {
 button.styler:hover,
 input[type="button"].styler:hover,
 input[type="submit"].styler:hover,
-input[type="reset"].styler:hover {}
+input[type="reset"].styler:hover {background:#990415}
 
 button.styler:active,
 input[type="button"].styler:active,
