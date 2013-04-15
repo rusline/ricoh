@@ -15,27 +15,6 @@ BODY { behavior:url("js/csshover.htc");}
 <![endif]-->
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/jquery.tools-1.2.7.min.js"></script>
-<script>
-	$(function() {
-			var i = $(window).width();
-			if (i > 319){ $('#items > div').css({ width: i }); }
-			$("#slider").scrollable({ circular: true, touch: false, easing: 'easeInOutBack', speed: 900}).navigator({ navi: '#navigation' });
-			window.api = $("#slider").data("scrollable");
-			$(window).resize(function() {
-				var a = 1 + window.api.getIndex();
-				var w = $(window).width();
-				if (w > 319) {
-					var l = a * w
-					$('#items').css({ left: + - +l });
-					$('#items > div').css({ width: w });
-				} else {
-					$('#items > div').css({ width: 300 });
-				}
-			});
-		});
-</script>
 
 <script type="text/javascript" src="js/my_script.js"></script>
 
@@ -51,29 +30,87 @@ BODY { behavior:url("js/csshover.htc");}
 </div>
 <!-- /Header -->
 
-<div class="slide-box">
-<div id="slider">
-	<div id="items">
-		<div class="slide">
-			<div><h2>Digital Agenda</h2><p>Внутри программы Digital Agenda <br />заявлено 100 планируемых мероприятий по разным темам,<br /> включая единый цифровой рынок ЕС, доверие и безопасность,<br /> а также развитие электронных навыков.</p></div>
+
+<div id="slider" class="sl-slider-wrapper">
+	<div class="sl-slider">
+		
+		<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+			<div class="sl-slide-inner">
+				<div class="bg-img bg-img-1"></div>
+				<h2>Digital Agenda</h2>
+				<p>Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</p>
+			</div>
 		</div>
-		<div class="slide">
-			<div><h2>Digital Agenda</h2><p>Внутри программы Digital Agenda <br />заявлено 100 планируемых мероприятий по разным темам,<br /> включая единый цифровой рынок ЕС, доверие и безопасность,<br /> а также развитие электронных навыков.</p></div>
+					
+		<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+			<div class="sl-slide-inner">
+				<div class="bg-img bg-img-2"></div>
+				<h2>Digital Agenda</h2>
+				<p>Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</p>
+			</div>
 		</div>
-		<div class="slide">
-			<div><h2>Digital Agenda</h2><p>Внутри программы Digital Agenda <br />заявлено 100 планируемых мероприятий по разным темам,<br /> включая единый цифровой рынок ЕС, доверие и безопасность,<br /> а также развитие электронных навыков.</p></div>
+				
+		<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+			<div class="sl-slide-inner">
+				<div class="bg-img bg-img-3"></div>
+				<h2>Dum spiro, spero.</h2>
+				<p>Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</p>
+			</div>
+		</div>
+					
+		<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+			<div class="sl-slide-inner">
+				<div class="bg-img bg-img-4"></div>
+				<h2>Donna nobis pacem.</h2>
+				<p>Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</p>
+			</div>
 		</div>
 	</div>
+
+	<div id="nav-dots" class="nav-dots">
+		<span class="nav-dot-current"></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
 </div>
 
-<div id="navigation-wrapper">
-	<ul id="navigation">
-		<li class="active">&nbsp;</li>
-		<li>&nbsp;</li>
-		<li>&nbsp;</li>
-	</ul>
-</div>
-</div>	
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+<script type="text/javascript">
+$(function() {
+	var Page = (function() {
+		var $nav = $( '#nav-dots > span' ),
+			slitslider = $( '#slider' ).slitslider( {
+				onBeforeChange : function( slide, pos ) {
+					$nav.removeClass( 'nav-dot-current' );
+					$nav.eq( pos ).addClass( 'nav-dot-current' );
+				}
+			} ),
+			init = function() {
+				initEvents();
+			},
+			initEvents = function() {
+				$nav.each( function( i ) {
+					$( this ).on( 'click', function( event ) {
+						var $dot = $( this );
+						if( !slitslider.isActive() ) {
+							$nav.removeClass( 'nav-dot-current' );
+							$dot.addClass( 'nav-dot-current' );
+						}
+						slitslider.jump( i + 1 );
+						return false;
+					} );
+				} );
+			};
+			return { init : init };
+	})();
+	Page.init();
+});
+</script>
 
 <!-- Content -->
 <div class="content">
