@@ -26,6 +26,19 @@
 		});
 		
 		
+		// popup
+		$('.popup-link').click(function(){
+				$('.overlay').fadeIn('fast',function(){
+						$('.popup-box').animate({'top':'300px'},500);
+				});
+		});
+		$('.close-popup').click(function(){
+				$('.popup-box').animate({'top':'-2000px'},500,function(){
+						$('.overlay').fadeOut('fast');
+				});
+		});
+		
+		
 		//form
 		$('.line select, .line input').styler();
 		
