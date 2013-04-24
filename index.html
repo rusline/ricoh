@@ -4,6 +4,7 @@
 <title>Welcome to ...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
 <script src="js/png.js"></script>
 <script>
@@ -15,9 +16,8 @@ BODY { behavior:url("js/csshover.htc");}
 <![endif]-->
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-
+<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
 <script type="text/javascript" src="js/my_script.js"></script>
-
 
 </head>
 <body>
@@ -25,7 +25,15 @@ BODY { behavior:url("js/csshover.htc");}
 <!-- Header -->
 <div class="header">
 	<div class="logo"><a href="#"><img src="images/logo.png" alt="#" /></a></div>
-	<div class="h-right"><span><img src="images/ico01.png"  alt="#" /> <a href="#">Вход</a></span> <a href="#">Регистрация нового партнёра</a></div>
+	<div class="h-right"><span class="enter-link"><img src="images/ico01.png"  alt="#" /> <a href="#">Вход</a></span> <a href="#">Регистрация нового партнёра</a>
+		<div class="enter-drop">
+			<em></em>
+			<div><input type="text" value="Логин" class="styler" /></div>
+			<div><input type="text" value="Пароль" class="styler" /></div>
+			<div><a href="#">Забыли пароль?</div>
+			<div><input type="submit" value="Войти" class="styler"  /></div>
+		</div>
+	</div>
 	<div class="ofsite"><a href="#">Официальный сайт</a></div>
 </div>
 <!-- /Header -->
@@ -38,7 +46,7 @@ BODY { behavior:url("js/csshover.htc");}
 			<div class="sl-slide-inner">
 				<div class="bg-img bg-img-1"></div>
 				<h2>Digital Agenda</h2>
-				<p>Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</p>
+				<div class="txt">Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</div>
 			</div>
 		</div>
 					
@@ -46,15 +54,14 @@ BODY { behavior:url("js/csshover.htc");}
 			<div class="sl-slide-inner">
 				<div class="bg-img bg-img-2"></div>
 				<h2>Digital Agenda</h2>
-				<p>Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</p>
-			</div>
+				<div class="txt">Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</div>			</div>
 		</div>
 				
 		<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
 			<div class="sl-slide-inner">
 				<div class="bg-img bg-img-3"></div>
 				<h2>Dum spiro, spero.</h2>
-				<p>Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</p>
+				<div class="txt">Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</div>
 			</div>
 		</div>
 					
@@ -62,7 +69,7 @@ BODY { behavior:url("js/csshover.htc");}
 			<div class="sl-slide-inner">
 				<div class="bg-img bg-img-4"></div>
 				<h2>Donna nobis pacem.</h2>
-				<p>Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</p>
+				<div class="txt">Внутри программы Digital Agenda<br />заявлено 100 планируемых мероприятий по разным темам,<br />включая единый цифровой рынок ЕС, доверие и безопасность,<br />а также развитие электронных навыков.</div>
 			</div>
 		</div>
 	</div>
@@ -119,7 +126,7 @@ $(function() {
 	<h2>Новости для партнеров</h2>
 	<ul>
 		<li><span>02.04.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">МФУ Ricoh получили три награды независимой лаборатории BLI как лучшие продукты года</a></li>
-		<li><span>24.04.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Ricoh Aficio™SP 3500SF и SP 3510SF: новые высокопроизводительные и экономичные многофункциональные устройства «4 в 1»</a></li>
+		<li><span>24.04.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Ricoh Aficio™SP 3500SF и SP 3510SF: новые высокопроизводительные и экономичные многофункциональные устройства «4 в 1» Ricoh Aficio™SP 3500SF и SP 3510SF: новые высокопроизводительные и экономичные многофункциональные устройства «4 в 1»</a></li>
 		<li><span>19.03.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Ricoh - платиновый спонсор международной конференции ON DEMAND Russia 2013</a></li>
 		<li><span>09.02.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Ricoh поддержит пострадавших от наводнения на Кубани</a></li>
 		<li><span>29.01.2013</span> <img src="images/mdash.png" alt="#" /> <a href="#">Частное «облако» Ricoh получило награду 2013 Green IT Awards в номинации «Проект года»</a></li>
@@ -136,12 +143,12 @@ $(function() {
 <div id="footer">
 <div class="footer">
 	<div class="f-left">
-		<p>&copy; Ricoh , 2013. Все права защищены.</p>
-		<p>107023, Москва, Волгоградский проспект, 42<br />Тел.: (495) 545-58-59, тел./факс: (495) 627-78-12<br /><a href="#">support@ricoh.ru</a></p>
+		<div>&copy; Ricoh , 2013. Все права защищены.</div>
+		<div>107023, Москва, Волгоградский проспект, 42<br />Тел.: (495) 545-58-59, тел./факс: (495) 627-78-12<br /><a href="#">support@ricoh.ru</a></div>
 	</div>
 	<div class="f-right">
-		<p><a href="#">Соглашение о конфиденциальности</a><br /><a href="#">Условия и правила использования</a></p>
-		<div><a href="#">Карта сайта</a></div>
+		<div><a href="#">Соглашение о конфиденциальности</a><br /><a href="#">Условия и правила использования</a></div>
+		<span><a href="#">Карта сайта</a></span>
 	</div>
 	
 </div>

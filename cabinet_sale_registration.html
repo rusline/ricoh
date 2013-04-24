@@ -32,7 +32,20 @@ BODY { behavior:url("js/csshover.htc");}
 <!-- Header -->
 <div class="header">
 	<div class="logo"><a href="#"><img src="images/logo.png" alt="#" /></a></div>
-	<div class="h-right"><img src="images/ico01_.png"  alt="#" /> <a href="#">Выход</a></div>
+	<div class="user-box">
+		<div class="user-img"><img src="images/ava01.jpg" width="41" height="41" /></div>
+		<div class="user-name">Чернышев Александр</div>
+		<div class="user-ball">2 647 937 баллов</div>
+		<div class="user-drop">
+			<em></em>
+			<ul>
+				<li><a href="#">Регистрация подажи</a></li>
+				<li><a href="#">Профиль</a></li>
+				<li><a href="#">Сообщение в службу поддержки</a></li>
+				<li class="exit"><img src="images/ico01_.png"  alt="#" /> <a href="#">Выход</a></li>
+			</ul>
+		</div>
+	</div>
 	<div class="mmenu">
 		<ul>
 			<li><a href="#">Магазин</a></li>
@@ -40,7 +53,6 @@ BODY { behavior:url("js/csshover.htc");}
 			<li><a href="#">Поддержка</a></li>
 			<li><a href="#">Материалы</a></li>
 			<li><a href="#">Новости и акции</a></li>
-			<li class="act"><a href="#">Профиль</a></li>
 		</ul>
 	</div>
 </div>
@@ -57,14 +69,34 @@ BODY { behavior:url("js/csshover.htc");}
 			<p>Взаимодействие корпорации и клиента, вопреки мнению П.Друкера, оправдывает целевой трафик, осознавая социальную ответственность бизнеса.</p>
 		</div>
 		
-		<div class="serial-n"><input class="styler" type="text" value="Серийный номер" /> <input class="styler" type="submit" value="Загрузить данные из файла" /></div>
+		<div class="serial-n"><label>Серийный номер</label><input class="styler" type="text" value="" /> <input class="styler" type="submit" value="Загрузить данные из файла" /></div>
 		
 		<div class="serial-list">
 			<ul class="clearfix">
-				<li><img src="images/good03.png" alt="#" /><p>Aficio&trade;W7140 <span>150 баллов</span></p></li>
-				<li><img src="images/good03.png" alt="#" /><p>Aficio&trade;W7140 <span>150 баллов</span></p></li>
-				<li><img src="images/good03.png" alt="#" /><p>Aficio&trade;W7140 <span>150 баллов</span></p></li>
-				<li><img src="images/good03.png" alt="#" /><p>Aficio&trade;W7140 <span>150 баллов</span></p></li>
+				<li>
+					<img src="images/good03.png" alt="#" />
+					<div class="ball">27 340 <span>баллов</span> <div>Серийный номер — D222ZA00080</div></div>
+					<div class="name">Aficio&trade;W7140 <span>Копир, сетевой принтер, цветной сканер</span> <div>Артикул — 243232</div></div>
+					<div class="del"><a href="#"></a></div>
+				</li>
+				<li>
+					<img src="images/good03.png" alt="#" />
+					<div class="ball">27 340 <span>баллов</span> <div>Серийный номер — D222ZA00080</div></div>
+					<div class="name">Aficio&trade;W7140 <span>Копир, сетевой принтер, цветной сканер</span> <div>Артикул — 243232</div></div>
+					<div class="del"><a href="#"></a></div>
+				</li>
+				<li>
+					<img src="images/good03.png" alt="#" />
+					<div class="ball">27 340 <span>баллов</span> <div>Серийный номер — D222ZA00080</div></div>
+					<div class="name">Aficio&trade;W7140 <span>Копир, сетевой принтер, цветной сканер</span> <div>Артикул — 243232</div></div>
+					<div class="del"><a href="#"></a></div>
+				</li>
+				<li>
+					<img src="images/good03.png" alt="#" />
+					<div class="ball">27 340 <span>баллов</span> <div>Серийный номер — D222ZA00080</div></div>
+					<div class="name">Aficio&trade;W7140 <span>Копир, сетевой принтер, цветной сканер</span> <div>Артикул — 243232</div></div>
+					<div class="del"><a href="#"></a></div>
+				</li>
 			</ul>
 		</div>
 		
@@ -73,34 +105,35 @@ BODY { behavior:url("js/csshover.htc");}
 				<tr>
 					<td>
 						<div class="line">
-							<select><option>Кому продано</option><option>2</option></select>
+							<label>Кому продано</label><select><option>Частное лицо</option><option>2</option></select>
 						</div>
 					</td>
 					<td>
-						<input type="text" id="datepicker">
+						<label>Дата продажи</label><input type="text" id="datepicker">
 					</td>
 				</tr>
 				<tr>
-					<td colspan="2"><textarea class="styler" onFocus="this.value='';this.style.color = '#000';this.style.fontStyle='normal'">Адрес установки</textarea></td>
+					<td colspan="2"><label>Адрес установки</label><textarea class="styler" onFocus="this.value='';this.style.color = '#000';this.style.fontStyle='normal'"></textarea></td>
 				</tr>
 				<tr>
-					<td><input class="styler" type="text" value="Название заказчика" /></td>
+					<td><label>Название заказчика</label><input class="styler" type="text" value="" /></td>
 					<td>
 						<div class="line">
-							<select><option>Тип заказчика</option><option>2</option></select>
+							<label>Тип заказчика</label><select><option>Тип заказчика</option><option>2</option></select>
 						</div>
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<div class="line">
-							<select><option>Для чего будет использоваться оборудование</option><option>2</option></select>
+							<label>Для чего будет использоваться оборудование</label><select><option>Бизнес</option><option>2</option></select>
 						</div>
 					</td>
 					<td>
 						<div class="line">
+							<label>Почему заказчик предпочел покупку Ricoh</label>
 							<select>
-								<option>Почему заказчик предпочел покупку Ricoh</option>
+								<option>Известность</option>
 								<option>Потому, что хорошо</option>
 								<option>Бюджетно</option>
 								<option>Ориентировался на качество продукции</option>
@@ -110,7 +143,7 @@ BODY { behavior:url("js/csshover.htc");}
 					</td>
 				</tr>
 				<tr>
-					<td colspan="2"><textarea class="styler" onFocus="this.value='';this.style.color = '#000';this.style.fontStyle='normal'">Комментарий</textarea></td>
+					<td colspan="2"><label>Комментарий</label><textarea class="styler" onFocus="this.value='';this.style.color = '#000';this.style.fontStyle='normal'"></textarea></td>
 				</tr>
 			</table>
 		</div>
@@ -130,13 +163,14 @@ BODY { behavior:url("js/csshover.htc");}
 <div id="footer">
 <div class="footer">
 	<div class="f-left">
-		<p>&copy; Ricoh , 2013. Все права защищены.</p>
-		<p>107023, Москва, Волгоградский проспект, 42<br />Тел.: (495) 545-58-59, тел./факс: (495) 627-78-12<br /><a href="#">support@ricoh.ru</a></p>
+		<div>&copy; Ricoh , 2013. Все права защищены.</div>
+		<div>107023, Москва, Волгоградский проспект, 42<br />Тел.: (495) 545-58-59, тел./факс: (495) 627-78-12<br /><a href="#">support@ricoh.ru</a></div>
 	</div>
 	<div class="f-right">
-		<p><a href="#">Соглашение о конфиденциальности</a><br /><a href="#">Условия и правила использования</a></p>
-		<div><a href="#">Карта сайта</a></div>
+		<div><a href="#">Соглашение о конфиденциальности</a><br /><a href="#">Условия и правила использования</a></div>
+		<span><a href="#">Карта сайта</a></span>
 	</div>
+	
 </div>
 </div>
 <!-- /Footer -->
