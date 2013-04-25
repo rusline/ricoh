@@ -137,6 +137,7 @@ textarea.styler {padding:10px 0 0 10px;
 	color: #5a5a5d;
 	font: 12px Arial, Tahoma, sans-serif;
 	font-style:italic;
+	resize:none;
 }
 
 textarea.error {border: 1px solid #eb8a95;}

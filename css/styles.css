@@ -153,7 +153,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .order-list table td div.ball span{font-size:17px;vertical-align:top}
 .order-list .all{margin:20px 0;background:url(../images/ico08.png) 0 2px no-repeat;padding:0 0 0 20px}
 
-.my-account{font-size:37px;margin-top:-5px;letter-spacing:-1px;padding-bottom:20px}
+.my-account{font-size:35px;margin-top:-5px;letter-spacing:-1px;padding-bottom:20px}
 .my-account span{color:#d7152b}
 
 .my-message{border-top:2px solid #000;padding:20px 0 0 0}
@@ -237,8 +237,10 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .delivery-box .reg input{width:100%}
 
 .message-box{padding:5px 0 20px 0}
-.message-ok{background:url(../images/message_ok.png) 0 0 no-repeat;width:875px;height:49px;line-height:49px;font-style:italic;padding-left:25px;margin:5px 0}
-.message-error{background:url(../images/message_error.png) 0 0 no-repeat;width:875px;height:49px;line-height:49px;font-style:italic;padding-left:25px;margin:5px 0}
+.message-box div{position:relative;}
+.message-box div span{display:block;width:25px;height:25px;position:absolute;top:10px;right:20px;cursor:pointer}
+.message-ok{background:url(../images/message_ok.png) top center no-repeat;width:820px;font-style:italic;margin:5px 0;padding:17px 55px 17px 25px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);position:relative;}
+.message-error{background:url(../images/message_error.png) top center no-repeat;width:820px;font-style:italic;margin:5px 0;padding:17px 55px 17px 25px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);position:relative;}
 
 .line span.help{color:#d7152b;font-style:italic;display:block;padding:2px 0}
 
@@ -285,7 +287,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .to-me span.ava{width:58px;background:url(../images/ava_no.jpg) no-repeat;display:block;min-height:58px;position:absolute;left:0;top:7px}
 .to-me span.ava img{width:58px;min-height:58px}
 .to-me div{border:1px solid #e4e4e4;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);position:relative;padding:20px 150px 20px 20px;background:#fff;line-height:17px}
-.to-me div span{text-align:right;color:#5a5a5d;font-style:italic;position:absolute;top:20px;right:20px}
+.to-me div span{text-align:right;color:#5a5a5d;font-style:italic;width:140px;float:right;margin-right:-130px}
 .to-me div span b{color:#000;font-style:normal;display:block;padding-bottom:4px}
 .to-me div em{background:url(../images/ugol2.png) no-repeat;width:6px;height:9px;position:absolute;top:10px;left:-6px}
 .from-me{padding:7px 78px;position:relative}
@@ -316,7 +318,8 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .info-form table td input.styler{width:290px}
 .info-form table td textarea{width:640px;height:140px}
 
-.info-form table td .jq-file{padding-bottom:20px}
+.info-form table td .jq-file{padding-bottom:20px;overflow:visible !important}
+.info-form table td .jq-file .name{left:5px;width:200px;color:#000;height:28px;z-index:999;font-size:12px;position:absolute;top:-20px}
 .info-form table td .jq-file .browse{background:url(../images/upload_img2.png) no-repeat;width:200px}
 .info-form table td .jq-file:hover .browse{background:url(../images/upload_img2.png) no-repeat;width:200px}
 
@@ -362,7 +365,7 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .recovery-form{padding-bottom:50px}
 .recovery-form table{border-collapse:collapse;width:100%}
 .recovery-form table td{padding:0 30px 0 0}
-.recovery-form table td.captcha{padding:20px 5px 0 0}
+.recovery-form table td.captcha{padding:20px 2px 0 0}
 .recovery-form table td.send{padding:20px 0 0 0}
 .recovery-form table td label{display:block;font-weight:bold;padding-bottom:4px}
 .recovery-form table td input[type="text"]{width:270px}
@@ -377,8 +380,11 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 
 .news-box ul{margin:0;padding:0;list-style-type:none}
 .news-box ul li{clear:both;padding-bottom:30px;line-height:17px;}
-.news-box ul li div{position:relative;font-size:14px;padding-bottom:15px;}
-.news-box ul li div span{color:#5a5a5d;font-size:12px}
+.news-box ul li div{position:relative;font-size:14px;padding:0 0 15px 0;}
+.news-box ul li div table{border-collapse:collapse;}
+.news-box ul li div table td{vertical-align:top}
+.news-box ul li div table td:first-child{width:90px}
+.news-box ul li div span{color:#5a5a5d;font-size:12px;}
 .news-box ul li div img{vertical-align:middle}
 .news-box ul li em img{float:left;margin:0 20px 5px 0;width:106px}
 
@@ -394,11 +400,12 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 
 .support-full{padding-bottom:10px}
 .support-full h3{font-size:22px;padding-bottom:20px;font-weight:normal}
-.support-full p{padding:0 0 14px 0;font-size:14px;line-height:19px}
-.support-full p a{color:#5e5f62;text-decoration:none;border-bottom:1px dashed #5e5f62}
-.support-full p a:hover{border:0}
-.support-full p span{display:block;font-size:12px;padding:15px 0 0 50px}
-.support-full .sep{background:#e1e1e1;height:1px;font-size:1px;margin:10px 0 20px 0}
+.support-full div.s-top{padding:0 0 14px 0;font-size:14px;line-height:19px}
+.support-full div.s-top a{color:#5e5f62;text-decoration:none;border-bottom:1px dashed #5e5f62}
+.support-full div.s-top a:hover{border:0}
+.support-full div.s-top.active a{color:#000;border:0;cursor:text}
+.support-full div.s-bot{display:none;font-size:12px;padding:0 0 10px 50px}
+.support-full div.sep{background:#e1e1e1;height:1px;font-size:1px;margin:10px 0 20px 0}
 
 /* Content */
 
