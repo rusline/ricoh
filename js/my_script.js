@@ -17,8 +17,7 @@
         });
     });
 		
-		// textarea
-		$('textarea').elastic();
+		
 		
 		// enter
 		$('.enter-link').each(function(i, item){
@@ -35,7 +34,8 @@
 			$(this).hide();
 		});
 			
-		
+		// textarea
+		$('textarea').elastic();
 		
 		// delete
 		$('.del').click(function(e){
