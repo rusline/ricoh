@@ -38,8 +38,9 @@
 		
 		
 		// delete
-		$('.del').click(function(){
-				$(this).parents(".serial-list li").animate({ opacity: 'hide' }, "slow");
+		$('.del').click(function(e){
+				e.preventDefault();
+				$(this).parents(".serial-list li").animate({ opacity: 'hide' }, "slow", function() {$(this).detach()});
 		});
 		
 		// message
