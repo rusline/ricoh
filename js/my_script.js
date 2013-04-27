@@ -16,7 +16,10 @@
             }
         });
     });
-
+		
+		// textarea
+		$('textarea').elastic();
+		
 		// enter
 		$('.enter-link').each(function(i, item){
 			$(item).bind('mouseover', function(e){
