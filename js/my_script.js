@@ -101,7 +101,18 @@
 			e.preventDefault();	
 		});
 		
+		//
+		$(".mlink").click(function(e){
+				$(this).hide();
+				$(this).next("div.mdrop").slideToggle("fast");
+			e.preventDefault();	
+		});
 		
+		$(".hide-mdrop").click(function(e){
+				$(".mlink").show();
+				$(this).parents("div.mdrop").hide();
+			e.preventDefault();	
+		});
 		
 		//
 		$(".tools-b").click(function(e){
