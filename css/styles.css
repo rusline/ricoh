@@ -556,10 +556,14 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .u-name-drop div.hide-name-drop a{color:#797979;font-size:12px;text-decoration:none;border-bottom:1px dashed #797979;font-style:italic}
 
 .tools-box{position:relative}
+.tools-box.act{z-index:10}
 .tools-box .tools-b{}
-.tools-box .tools-drop{position:absolute;top:18px;left:-50px;background:#fff;border:1px solid #aeaeae;padding:5px 10px}
+.tools-box .tools-drop{position:absolute;top:24px;left:-50px;background:#fff;border:1px solid #aeaeae;padding:5px 10px;text-align:left;display:none}
 .tools-box .tools-drop a{color:#000;text-decoration:none}
+.tools-box .tools-drop .ugol{position:absolute;background:url(../images/ugol4.png) 0 0 no-repeat;width:14px;height:9px;top:-9px;right:27px}
 .tools-box .tools-drop a:hover{text-decoration:underline}
-.tools-box .tools-drop .tools-1{background:url(../images/ico11.png) 0 0 no-repeat;padding:0 0 0 15px;}
+.tools-box .tools-drop .tools-1{background:url(../images/ico11.png) 0 2px no-repeat;padding:3px 0 2px 20px;margin-bottom:4px}
+.tools-box .tools-drop .tools-2{background:url(../images/ico12.png) 0 2px no-repeat;padding:3px 0 2px 20px;margin-bottom:4px}
+.tools-box .tools-drop .tools-3{background:url(../images/ico13.png) 0 2px no-repeat;padding:3px 0 2px 20px;}
 
 

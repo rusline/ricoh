@@ -88,6 +88,13 @@
 		});
 		
 		
+		//
+		$(".tools-b").click(function(e){
+				$(this).parents("div.tools-box").toggleClass("act");
+				$(this).next("div.tools-drop").slideToggle("fast");
+			e.preventDefault();	
+		});
+		
 		
 		// textarea
 		$('textarea').elastic();
