@@ -105,8 +105,7 @@ input[type="password"].styler,
 input[type="search"].styler,
 input[type="tel"].styler,
 input[type="text"].styler,
-input[type="url"].styler,
-textarea.styler {
+input[type="url"].styler {
 	padding:0 10px;
 	border: 1px solid #CCC;
 	background:#fff url(../images/in_bg.png) top repeat-x;

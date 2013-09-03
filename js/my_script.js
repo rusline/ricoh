@@ -95,6 +95,29 @@
 			e.preventDefault();	
 		});
 		
+		// view-popup
+		$('.view-link').click(function(){
+				$('.overlay').fadeIn('fast',function(){
+						$('.view').animate({'top':'250px'},500);
+				});
+		});
+		// answer-popup
+		$('.answer-link').click(function(){
+				$('.overlay').fadeIn('fast',function(){
+						$('.answer').animate({'top':'250px'},500);
+				});
+		});
+		
+		
+		$('.close-popup, .overlay').click(function(){
+				$('.answer, .view').animate({'top':'-2000px'},500,function(){
+						$('.overlay').fadeOut('fast');
+				});
+		});
+		
+		jQuery('.scroll-pane').jScrollPane();
+
+		
 		
 		// textarea
 		$('textarea').elastic();

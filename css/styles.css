@@ -523,13 +523,14 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 
 .search-filter{padding-bottom:30px}
 .search-filter .line{padding-bottom:5px}
+.search-filter .line.align-right{text-align:right}
 .search-filter .line input.in01{width:265px;font-style:normal}
-.search-filter .line input.in02{width:170px;font-style:normal;margin-right:5px}
-.search-filter .line input[type="submit"].styler{background:#d7152b;height:29px;line-height:29px;vertical-align:middle;font-size:12px;width:65px;text-shadow:1px 1px #666}
+.search-filter .line input.in02{width:158px;font-style:normal;margin-right:5px}
+.search-filter .line input[type="submit"].styler{background:#d7152b;height:29px;line-height:29px;vertical-align:middle;font-size:12px;width:78px;text-shadow:1px 1px #666}
 .search-filter .line input[type="submit"].styler:hover{background:#eb001b}
 
-.search-filter .line .jq-selectbox .select {width:148px;background:url(../images/select03.png) no-repeat;height:29px;line-height:29px;margin-right:5px}
-.search-filter .line .jq-selectbox .dropdown {width:200px}
+.search-filter .line .jq-selectbox .select {width:148px;background:url(../images/select03.png) no-repeat;height:29px;line-height:29px;margin-right:5px;text-align:left}
+.search-filter .line .jq-selectbox .dropdown {width:200px;text-align:left}
 
 .user-list{}
 .user-list table{border-collapse:collapse;width:100%;font-size:12px}
@@ -540,12 +541,12 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 
 .user-list table td.first{text-align:center;padding-right:20px}
 .user-list table td.last{text-align:center;}
-.user-list table td.last a.ico10{display:block;width:21px;height:21px;background:url(../images/ico10.png) no-repeat;margin:0 auto}
+a.ico10{display:block;width:21px;height:21px;background:url(../images/ico10.png) no-repeat;margin:0 auto}
 
 .user-list table td{padding-bottom:7px}
 
 .u-drop-box{position:relative}
-.u-drop-box.act{z-index:10}
+.u-drop-box.act{z-index:10;color:#000}
 .u-name{padding:8px 12px;-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0;behavior: url(js/pie.htc);position:relative;float:left}
 .u-name a{text-decoration:none;border-bottom:1px dashed #000;color:#000}
 .u-name.act{background:#eee;}
@@ -565,5 +566,52 @@ a:hover{color:#990415;text-decoration:none;border-bottom:0}
 .tools-box .tools-drop .tools-1{background:url(../images/ico11.png) 0 2px no-repeat;padding:3px 0 2px 20px;margin-bottom:4px}
 .tools-box .tools-drop .tools-2{background:url(../images/ico12.png) 0 2px no-repeat;padding:3px 0 2px 20px;margin-bottom:4px}
 .tools-box .tools-drop .tools-3{background:url(../images/ico13.png) 0 2px no-repeat;padding:3px 0 2px 20px;}
+
+.mess-list{}
+.mess-list table{border-collapse:collapse;width:100%;font-size:12px}
+.mess-list table th{font-size:12px;text-align:left;padding-bottom:7px}
+.mess-list table th.first{width:70px}
+.mess-list table th.second{padding-left:12px}
+.mess-list table th.last{text-align:center;}
+.mess-list table td.last{text-align:center;}
+.mess-list table td{padding-bottom:5px}
+.mess-list table td .mail a{color:#000}
+.mess-list table td .u-name a{border-bottom:0}
+
+.mess-list .u-name-drop{left:-80px}
+
+.mess-list table tr.read td{color:#389911}
+.mess-list table tr.read td .mail a{color:#389911}
+.mess-list table tr.read td .u-name a{color:#389911}
+
+.answer, .view{position:absolute;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);background:#fff;padding:20px 20px 20px 50px;width:650px;top:-2000px;left:50%;margin-left:-350px;z-index:999}
+.answer div.close-popup, .view div.close-popup{position:absolute;top:15px;right:15px}
+.answer .top-tool, .view .top-tool{padding-bottom:20px;}
+.answer .top-tool a, .view .top-tool a{color:#000;margin:0 10px 0 5px}
+.answer .top-tool b, .view .top-tool b{margin:0 10px 0 0}
+.answer .top-text, .view .top-text{color:#5e5f62;font-size:14px;line-height:19px;padding-bottom:10px}
+.view input.close-popup{width:200px}
+.answer textarea{width:630px;height:150px;margin-bottom:10px}
+.answer .btn input[type="submit"].styler{width:250px}
+.answer .btn input[type="reset"].styler{width:100px}
+
+.answer .scroll-pane {width:650px;height:90px;overflow: auto;font-size:14px;color:#000;line-height:19px;margin-bottom:15px}
+.answer .jspContainer{	overflow: hidden;	position: relative;}
+.answer .jspPane{	position: absolute;width:650px;}
+.answer .jspVerticalBar{	position: absolute;	top: 0;	right: 0;	width:5px;	height: 100%;}
+.answer .jspHorizontalBar{	position: absolute;	bottom: 0;	left: 0;	width: 100%;	height: 16px;}
+.answer .jspVerticalBar *, .answer .jspHorizontalBar * {	margin: 0;	padding: 0;}
+.answer .jspCap {	display: none;}
+.answer .jspHorizontalBar .jspCap{	float: left;}
+.answer .jspTrack{	background: url(../images/track.png) repeat-y;	position: relative;}
+.answer .jspDrag{	background: #d7152b;	position: relative;	top: 0;	left: 0;	cursor: pointer;}
+.answer .jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {	float: left;	height: 100%;}
+.answer .jspArrow {	background: #50506d;	text-indent: -20000px;	display: block;	cursor: pointer;}
+.answer .jspArrow.jspDisabled {	cursor: default;	background: #80808d;}
+.answer .jspVerticalBar .jspArrow {	height: 16px;}
+.answer .jspHorizontalBar .jspArrow {	width: 16px;	float: left;	height: 100%;}
+.answer .jspVerticalBar .jspArrow:focus{	outline: none;}
+.answer .jspCorner{	background: #eeeef4;	float: left;	height: 100%;}
+* html .answer .jspCorner{	margin: 0 -3px 0 0;}
 
 
