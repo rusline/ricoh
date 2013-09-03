@@ -87,6 +87,21 @@
 			e.preventDefault();	
 		});
 		
+		// 
+		$(".history-b").click(function(e){
+				$(this).addClass("act").parents("div.history-box").addClass("act");
+				$(this).next("div.history-drop").fadeIn("fast");
+			e.preventDefault();	
+		});
+		
+		$(".hide-history-drop").click(function(e){
+				$(this).parents("div.history-box").removeClass("act");
+				$("div.history-b").removeClass("act");
+				$("div.history-drop").fadeOut("fast");
+			e.preventDefault();	
+		});
+		
+		
 		
 		//
 		$(".tools-b").click(function(e){
