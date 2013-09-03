@@ -1,6 +1,9 @@
 ﻿var func = function()
 {
-
+			//form
+		$('.line select, .line input').styler();
+		
+		
     $('input:text, input:password').each(function(){
         var txtval = $(this).val();
         $(this).focus(function(){
@@ -34,8 +37,6 @@
 			$(this).hide();
 		});
 			
-		// textarea
-		$('textarea').elastic();
 		
 		// delete
 		$('.del').click(function(e){
@@ -70,12 +71,26 @@
 						$('.overlay').fadeOut('fast');
 				});
 		});
+	
+	
+		// 
+		$(".u-name").click(function(e){
+				$(this).addClass("act").parents("div.u-drop-box").addClass("act");
+				$(this).next("div.u-name-drop").fadeIn("fast");
+			e.preventDefault();	
+		});
+		
+		$(".hide-name-drop").click(function(e){
+				$(this).parents("div.u-drop-box").removeClass("act");
+				$("div.u-name").removeClass("act");
+				$("div.u-name-drop").fadeOut("fast");
+			e.preventDefault();	
+		});
 		
 		
-		//form
-		$('.line select, .line input').styler();
 		
-		
+		// textarea
+		$('textarea').elastic();
 
 		
 		
