@@ -666,6 +666,44 @@ a.ico10{display:block;width:21px;height:21px;background:url(../images/ico10.png)
 .zachet-p .btn input[type="reset"].styler{width:100px;height:29px;line-height:29px;margin-left:5px;font-size:13px}
 .zachet-p textarea.styler{width:590px;height:120px}
 
+.deluser-p{position:absolute;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);background:#fff;padding:10px 25px 20px 25px;width:450px;top:-2000px;left:50%;margin-left:-250px;z-index:999;}
+.deluser-p h3{font-size:30px;font-weight:normal}
+.deluser-p div.close-popup{position:absolute;top:15px;right:15px}
+.deluser-p .top-text{color:#5e5f62;font-size:14px;line-height:19px;padding-bottom:30px}
+.deluser-p .btn input[type="submit"].styler{width:300px;}
+.deluser-p .btn input[type="reset"].styler{width:140px;margin-left:5px;}
+
+.addball-p{position:absolute;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);background:#fff;padding:10px 25px 20px 25px;width:450px;top:-2000px;left:50%;margin-left:-250px;z-index:999;}
+.addball-p h3{font-size:30px;font-weight:normal;padding-bottom:20px}
+.addball-p div.close-popup{position:absolute;top:15px;right:15px}
+.addball-p .line{padding-bottom:7px}
+.addball-p .line label{color:#5e5f62;font-size:14px;}
+.addball-p .btn{padding-top:10px}
+.addball-p .line input.in01{width:80px;font-style:normal}
+.addball-p .btn input[type="submit"].styler{width:300px;}
+.addball-p .btn input[type="reset"].styler{width:140px;margin-left:5px;}
+.addball-p textarea.styler{width:435px;height:50px;margin-top:5px}
+.addball-p table{border-collapse:collapse;width:100%}
+.addball-p table td{color:#5e5f62;font-size:14px;}
+.addball-p table td span.nball{color:#28292a;font-size:23px;}
+.addball-p .jq-radio {width:20px;height:20px;border:none;border-radius:0;background:url(../images/radio00.png) no-repeat;box-shadow:none;vertical-align: middle;cursor: pointer;margin-left:15px}
+.addball-p .jq-radio.checked span {display: block;width:20px;height:20px;overflow: hidden;margin:0;border-radius:0;background:url(../images/radio01.png) no-repeat;}
+.addball-p .jq-radio.focused {border: none;}
+.addball-p .cball{padding:20px 0}
+
+.mes-p{position:absolute;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);background:#fff;padding:10px 25px 20px 25px;width:350px;top:-2000px;left:50%;margin-left:-200px;z-index:999;}
+.mes-p h3{font-size:30px;font-weight:normal}
+.mes-p div.close-popup{position:absolute;top:15px;right:15px}
+.mes-p .top-text{color:#5e5f62;font-size:14px;line-height:19px;padding-bottom:30px}
+.mes-p .top-text span.nball{color:#28292a;font-size:23px;}
+.mes-p .btn input[type="button"].styler{width:250px;}
+
+.activate-p{position:absolute;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;behavior: url(js/pie.htc);background:#fff;padding:10px 25px 20px 25px;width:350px;top:-2000px;left:50%;margin-left:-200px;z-index:999;}
+.activate-p h3{font-size:30px;font-weight:normal}
+.activate-p div.close-popup{position:absolute;top:15px;right:15px}
+.activate-p .top-text{color:#5e5f62;font-size:14px;line-height:19px;padding-bottom:30px}
+.activate-p .btn input[type="button"].styler{width:250px;}
+
 .view .scroll-pane {width:650px;height:90px;overflow: auto;font-size:14px;color:#000;line-height:19px;margin-bottom:15px}
 .view .jspContainer{	overflow: hidden;	position: relative;}
 .view .jspPane{	position: absolute;width:650px;}

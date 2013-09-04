@@ -161,6 +161,34 @@
 				});
 		});
 		
+		// deluser-popup
+		$('.deluser').click(function(){
+				$('.overlay').fadeIn('fast',function(){
+						$('.deluser-p').animate({'top':'250px'},500);
+				});
+		});
+		
+		// addball-popup
+		$('.addball').click(function(){
+				$('.overlay').fadeIn('fast',function(){
+						$('.addball-p').animate({'top':'250px'},500);
+				});
+		});
+		
+		// mes-popup
+		$('.mes').click(function(){
+				$('.overlay').fadeIn('fast',function(){
+						$('.mes-p').animate({'top':'250px'},500);
+				});
+		});
+		
+		// activate-popup
+		$('.activate').click(function(){
+				$('.overlay').fadeIn('fast',function(){
+						$('.activate-p').animate({'top':'250px'},500);
+				});
+		});
+		
 		
 		$('.close-popup, .overlay').click(function(){
 				$('.answer, .view').animate({'top':'-2000px'},500,function(){
