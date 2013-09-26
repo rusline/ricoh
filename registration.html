@@ -54,7 +54,37 @@ BODY { behavior:url("js/csshover.htc");}
 		<h2>Анкета</h2>
 		<div class="clearfix">
 			<div class="reg-left">
-				<div class="line"><label>Название компании</label><input class="in01 styler" type="text" value="" /></div>
+				<div class="line">
+					<label>Название компании</label>
+					<div class="incomp">
+					<input class="in01 styler" type="text" value="" />
+					<div class="dropinput">
+						<ul>
+							<li>
+							<div class="drop-desc dtitle">
+								<div class="drop-title">Рога и копыта1</div>
+								<div class="drop-txt">Регион: <span>Республика Хакасия</span></div>
+								<div class="drop-txt inn">ИНН: <span>47285932734</span></div>
+							</div>
+							</li>
+							<li>
+							<div class="drop-desc dtitle">
+								<div class="drop-title">Рога и копыта2</div>
+								<div class="drop-txt">Регион: <span>Республика Хакасия</span></div>
+								<div class="drop-txt inn">ИНН: <span>47285932734</span></div>
+							</div>
+							</li>
+							<li>
+							<div class="drop-desc dtitle">
+								<div class="drop-title">Рога и копыта3</div>
+								<div class="drop-txt">Регион: <span>Республика Хакасия</span></div>
+								<div class="drop-txt inn">ИНН: <span>47285932734</span></div>
+							</div>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
 				<div class="line maxheight">
 					<label>Страна</label>
 					<select>
@@ -79,35 +109,80 @@ BODY { behavior:url("js/csshover.htc");}
 						<option value="3">3</option>
 					</select>
 				</div>
-				<div class="line"><label>Адрес</label><textarea rows="" cols="" onFocus="this.value='';this.style.color = '#000';this.style.fontStyle='normal'"></textarea></div>
+				<div class="line"><label>Город</label><input class="in01 styler" type="text" value="" /></div>
 			</div>
 			<div class="reg-right">
-				<div class="line"><label>ИНН</label><input class="in01 styler" type="text" value="" /></div>
+				<div class="line"><label>ИНН</label>
+				<div class="incomp">
+					<input class="in01 styler" type="text" value="" />
+					<div class="dropinput">
+						<ul>
+							<li>
+							<div class="drop-desc dinn">
+								<div class="drop-title">Рога и копыта1</div>
+								<div class="drop-txt">Регион: <span>Республика Хакасия</span></div>
+								<div class="drop-txt inn">ИНН: <span>47285932734</span></div>
+							</div>
+							</li>
+							<li>
+							<div class="drop-desc dinn">
+								<div class="drop-title">Рога и копыта2</div>
+								<div class="drop-txt">Регион: <span>Республика Хакасия</span></div>
+								<div class="drop-txt inn">ИНН: <span>47285932735</span></div>
+							</div>
+							</li>
+							<li>
+							<div class="drop-desc dinn">
+								<div class="drop-title">Рога и копыта3</div>
+								<div class="drop-txt">Регион: <span>Республика Хакасия</span></div>
+								<div class="drop-txt inn">ИНН: <span>47285932736</span></div>
+							</div>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
 				<div class="line">
-					<label>Партнер</label>
+					<label>Область/край/республика</label>
+					<select>
+						<option selected="selected" value="Выберите регион">Выберите регион</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+				</div>
+				<div class="line">
+					<label>Статус</label>
 					<select>
 						<option selected="selected" value="Премьер-партнёр">Премьер-партнёр</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 					</select>
 				</div>
-				<div class="line"><label>Сфера деятельности</label><textarea rows="" cols="" onFocus="this.value='';this.style.color = '#000';this.style.fontStyle='normal'"></textarea></div>
 			</div>
+			
+			<div class="line2"><label>Адрес</label><input class="in01 styler" type="text" value="" /></div>
+			
 		</div>	
 				
 		<div class="sep">&nbsp;</div>
 		
 		<div class="clearfix">
 			<div class="reg-left">
-				<span class="ava">&nbsp;</span>
-				<div class="line"><label>ФИО</label><input class="in02 styler" type="text" value="" /></div>
+				<div class="line3"><label>ФИО</label><input class="in05 styler" type="text" value="" /></div>
+				<div class="line3"><label>Имя</label><input class="in05 styler" type="text" value="" /></div>
+				<div class="line3"><label>Отчество</label><input class="in05 styler" type="text" value="" /></div>
 				<div class="line"><label>Должность</label><input class="in02 styler" type="text" value="" /></div>
-				<div class="line"><input type="file" name="" /></div>
-			</div>
-			<div class="reg-right">
 				<div class="line"><label>Телефон</label><input class="in03 styler" type="text" value="Телефон" /><label>Электронная почта</label><input class="in03 styler" type="text" value="" /></div>
 				
 				<div class="line"><label style="margin-left:28px">Логин</label><input class="in03_ styler" type="text" value="" /> <label  style="margin-left:28px">Пароль</label><input class="in03_ styler" type="text" value="" /></div>
+				
+			</div>
+			<div class="reg-right">
+				<div class="ava-box clearfix">
+					<span class="ava">&nbsp;</span>
+					<div class="line"><input type="file" name="" /></div>
+					<div class="del-img"><a href="#">Удалить изображение</a></div>
+				</div>
 				<div class="line captcha"><label>Введите текст с изображения</label><img src="images/captcha.gif" alt="#" /> <a href="#"><img src="images/ico04.png" alt="#" /></a>	<input class="in04 styler" type="text" value="" />
 				</div>
 			</div>
