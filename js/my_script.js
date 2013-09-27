@@ -1,6 +1,21 @@
 ﻿var func = function()
 {
-	
+		
+		//
+		$(document).on("click", ".serial-n .title a", function(e) {
+			e.preventDefault();			
+			$(this).parent().find('span').replaceWith(function(index, oldHTML){
+				return $('<a href="#"></a>').html(oldHTML);
+			});
+			$(this).replaceWith(function(index, oldHTML){
+				return $('<span></span>').html(oldHTML);
+			});
+			$("div.sp").slideToggle("fast");
+			$("div.insp").slideToggle("fast");
+		});
+
+		$(".insp").hide();
+		
 		// enter
 		$('.enter-link').click(function(){
 			 $('div.enter-drop').toggle();
@@ -217,6 +232,7 @@
 		// textarea
 		$('textarea').elastic();
 
+		
 		
 		
 		
